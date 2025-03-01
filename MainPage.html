@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuck Norris Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="MainPage.css">
+    <script src="ChuckMovies.js" defer></script>
+    <script src="MainPage.js" defer></script>
+</head>
+<body onload="initializePage()">
+    <header>
+        <h1>Mori Sason: 208067587 | Sawsan Iyad: 213588270</h1>
+    </header>
+
+    <section id="about-and-image-container">
+        <div id="image-section">
+            <img id="chuck-image" alt="Random Chuck Norris Image">
+        </div>
+    
+        <div id="text-section">
+            <p>Chuck Norris is an American icon, born on March 10, 1940, who has mastered multiple martial arts disciplines, including his own system called Chun Kuk Do. He served in the United States Air Force and later became a martial arts champion, holding multiple professional titles. Beyond his martial arts career, Norris achieved fame through numerous action films and TV series, most notably "Walker, Texas Ranger" (1993-2001). He's particularly known for his role in "Way of the Dragon" (1972) alongside Bruce Lee. In internet culture, Chuck Norris has become legendary through countless jokes and memes celebrating his supposed superhuman abilities, making him a unique figure that bridges traditional action stardom with modern internet fame.</p>
+        </div>
+    </section>
+
+    <section id="movies-section">
+        <table id="movies-table">
+            <thead>
+                <tr>
+                    <th><span>Movie Title</span></th>
+                    <th><span>Release Year</span></th>
+                    <th><span>Role</span></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <section id="filter-section">
+        <input type="text" id="year-filter" placeholder="Enter Year">
+        <button id="filter-button">Filter</button>
+    </section>
+
+    <section id="joke-section">
+        <div id="joke-display"></div>
+    </section>
+
+    <section id="controls-section">
+        <button id="get-joke-button">Get Joke</button>
+        <button id="like-joke-button" disabled>Like</button>
+        <button id="dislike-joke-button" disabled>Dislike</button>
+        <button id="clear-joke-button" disabled>Clear</button>
+    </section>
+</body>
+</html>
